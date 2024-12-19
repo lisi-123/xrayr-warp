@@ -1,0 +1,66 @@
+{
+  "domainStrategy": "IPOnDemand",
+  "rules": [
+ {
+  "type": "field",
+  "outboundTag": "socks5-warp",
+  "domain": [
+    "regexp:akamaihd",
+    "regexp:amazon",
+    "regexp:auth0",
+    "regexp:cloudflare",
+    "regexp:diwodiwo",
+    "regexp:facebook",
+    "regexp:fbcdn",
+    "regexp:fbsbx",
+    "regexp:google",
+    "regexp:googlevideo",
+    "regexp:instagram",
+    "regexp:instagramad",
+    "regexp:intercom",
+    "regexp:hanime1",
+    "regexp:netflix",
+    "regexp:npmjs",
+    "regexp:openai",
+    "regexp:paramount",
+    "regexp:pixiv",
+    "regexp:pypi",
+    "regexp:recaptcha",
+    "regexp:sentry",
+    "regexp:stripe",
+    "regexp:wechat",
+    "regexp:wechatpay",
+    "regexp:whatsapp",
+    "regexp:youtube",
+    "regexp:ytimg",
+    "regexp:ipleak"
+      ]
+    },
+    {
+      "type": "field",
+      "outboundTag": "block",
+      "ip": [
+        "geoip:private"
+      ]
+    },
+    {
+      "type": "field",
+      "outboundTag": "block",
+      "protocol": [
+        "bittorrent"
+      ]
+    },
+    {
+      "type": "field",
+      "outboundTag": "IPv6_out",
+      "domain": [
+        "geosite:netflix"
+      ]
+    },
+    {
+      "type": "field",
+      "outboundTag": "IPv4_out",
+      "network": "udp,tcp"
+    }
+  ]
+}
