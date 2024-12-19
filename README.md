@@ -6,7 +6,7 @@ wget -O setup.sh https://raw.githubusercontent.com/lisi-123/xrayr-warp/main/setu
 
 脚本仅支持debian系统（或许还能支持乌班图？）
 
-运行脚本后，正常搭建节点即可
+运行脚本后，修改 /etc/XrayR/config.yml 正常搭建节点即可
 
 脚本仅对已有脚本做一个简单整合
 
