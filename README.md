@@ -1,7 +1,7 @@
 ## 原版xrayr解锁warp
 
 ```bash
-wget -O setup3.sh https://raw.githubusercontent.com/lisi-123/xrayr-warp/main/setup3.sh && chmod +x setup3.sh && ./setup3.sh
+apt-get install wget -y && wget -O setup3.sh https://raw.githubusercontent.com/lisi-123/xrayr-warp/main/setup3.sh && chmod +x setup3.sh && ./setup3.sh
 ```
 
 脚本仅支持debian系统（或许还能支持乌班图？）
