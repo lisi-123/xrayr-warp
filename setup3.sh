@@ -9,9 +9,6 @@ fi
 # 更新软件包列表
 apt-get update
 
-# 安装必需的软件包
-apt-get install sudo curl ufw nano -y
-
 # 安装 xrayr
 wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh v0.9.4
 
