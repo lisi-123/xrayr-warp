@@ -18,7 +18,5 @@ wget -N https://raw.githubusercontent.com/lisi-123/xrayr-warp/main/custom_outbou
 wget -N https://raw.githubusercontent.com/lisi-123/xrayr-warp/main/dns.json -P /etc/XrayR/
 wget -N https://raw.githubusercontent.com/lisi-123/xrayr-warp/main/route.json -P /etc/XrayR/
 
-# 安装warp并搭建socks代理
-wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh <<< $'2\n13\n40000\n1\n'
 
 echo "已自动配置warp解锁，在config.yml搭建节点后生效"
