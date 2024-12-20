@@ -10,7 +10,7 @@ wget -O setup3.sh https://raw.githubusercontent.com/lisi-123/xrayr-warp/main/set
 
 脚本仅对已有脚本做一个简单整合
 
-显示 wget: command not found 请先安装wget
+显示 wget: command not found 请先安装 wget
 
 ```bash
 apt-get install wget -y
